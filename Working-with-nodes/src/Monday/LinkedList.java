@@ -1,3 +1,5 @@
+package Monday;
+
 import java.util.ArrayList;
 
 public class LinkedList {

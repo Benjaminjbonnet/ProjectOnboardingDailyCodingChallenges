@@ -20,5 +20,21 @@ public class Main {
         list.head2.next.next = new Node(30);
  
         System.out.println("The node of intersection is " + list.getNode());
+        
+        
+        
+        Stack stack = new Stack(3);
+        
+        stack.push(5);
+        stack.push(2);
+        stack.push(1);
+      stack.print();
+      stack.pop();
+      stack.print();
+        
+      
+    
     }
+    
+    
 }

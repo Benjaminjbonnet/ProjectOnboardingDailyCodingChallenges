@@ -5,7 +5,7 @@ import monday.exception.TheStackIsFullException;
 public class Main {
 
 	
-    public static void main(String[] args) throws Exception
+    public static void main(String[] args)
     {
         LinkedList list = new LinkedList();
  
@@ -27,9 +27,24 @@ public class Main {
         
         Stack stack = new Stack(3);
         
-        stack.push(5);
-        stack.push(2);
-        stack.push(1);
+        try {
+			stack.push(5);
+		} catch (TheStackIsFullException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+        try {
+			stack.push(2);
+		} catch (TheStackIsFullException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+        try {
+			stack.push(1);
+		} catch (TheStackIsFullException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
       stack.print();
       stack.pop();
       stack.print();
